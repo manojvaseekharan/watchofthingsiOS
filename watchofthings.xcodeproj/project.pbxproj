@@ -15,6 +15,7 @@
 		7061DC101C3ECA0F00674F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7061DC0F1C3ECA0F00674F06 /* Assets.xcassets */; };
 		7061DC131C3ECA0F00674F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7061DC111C3ECA0F00674F06 /* LaunchScreen.storyboard */; };
 		708A852C1C41669B005B66B1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A852B1C41669B005B66B1 /* HomeViewController.swift */; };
+		709696241C43129D00A78D32 /* RoomsAccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */; };
 		70BDA2E81C41AEF000D6DACA /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */; };
 		70BDA2EA1C41E56A00D6DACA /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		7061DC141C3ECA0F00674F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7061DC1C1C3ECAFB00674F06 /* watchofthings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = watchofthings.entitlements; sourceTree = "<group>"; };
 		708A852B1C41669B005B66B1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsAccessoriesViewController.swift; sourceTree = "<group>"; };
 		70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
 		70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				704CF41C1C40AD34008F8E92 /* AccessoriesViewController.swift */,
 				708A852B1C41669B005B66B1 /* HomeViewController.swift */,
 				70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */,
+				709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */,
 			);
 			path = watchofthings;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				70BDA2EA1C41E56A00D6DACA /* RoomsViewController.swift in Sources */,
 				7061DC0B1C3ECA0F00674F06 /* ViewController.swift in Sources */,
 				704CF41D1C40AD34008F8E92 /* AccessoriesViewController.swift in Sources */,
+				709696241C43129D00A78D32 /* RoomsAccessoriesViewController.swift in Sources */,
 				70BDA2E81C41AEF000D6DACA /* AddHomeViewController.swift in Sources */,
 				7061DC091C3ECA0F00674F06 /* AppDelegate.swift in Sources */,
 			);

@@ -32,7 +32,6 @@ class HomeViewController : UIViewController, HMHomeManagerDelegate, UITableViewD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "homeToRooms")
         {
-            print("segue start")
             let path = self.tableView.indexPathForSelectedRow!
             let roomsVC : RoomsViewController = segue.destinationViewController as! RoomsViewController
             roomsVC.homeManager = self.homeManager
@@ -41,8 +40,6 @@ class HomeViewController : UIViewController, HMHomeManagerDelegate, UITableViewD
             
         }
     }
-    
-    
     
     
     func homeManager(manager: HMHomeManager, didAddHome home: HMHome) {
@@ -114,7 +111,7 @@ class HomeViewController : UIViewController, HMHomeManagerDelegate, UITableViewD
         }
         
     }
-    
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(homes == nil)

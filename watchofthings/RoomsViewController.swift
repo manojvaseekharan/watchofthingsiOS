@@ -37,6 +37,19 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
         tableView.reloadData()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "viewRoomAccessories")
+        {
+            //TODO: new view for adding accessory to room of home
+            let path = self.tableView.indexPathForSelectedRow!
+            let roomsAccessoriesVC : RoomsAccessoriesViewController = segue.destinationViewController as! RoomsAccessoriesViewController
+            roomsAccessoriesVC.homeManager = self.homeManager
+            roomsAccessoriesVC.currentHome = self.currentHome
+            roomsAccessoriesVC.currentRoom = self.currentRooms![path.row]
+            roomsAccessoriesVC.currentAccessories = self.currentRooms![path.row].accessories
+        }
+    }
+    
     
     func createAlert()
     {
