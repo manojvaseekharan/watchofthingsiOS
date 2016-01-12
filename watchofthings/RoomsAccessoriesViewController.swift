@@ -27,9 +27,6 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let action : Selector = Selector("createAlert")
-        //addNewAccessory.target = self
-        //addNewAccessory.action = action
         homeManager?.delegate = self
         self.navigationItem.title = currentRoom?.name
         
@@ -38,22 +35,25 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "addNewAccessory")
         {
-            //TODO: new view for adding accessory to room of home
+            let findAccessoriesVC : FindAccessoryViewController = segue.destinationViewController as! FindAccessoryViewController
+            
+            findAccessoriesVC.homeManager = self.homeManager
+            findAccessoriesVC.currentHome = self.currentHome
+            findAccessoriesVC.currentRoom = self.currentRoom
         }
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if(currentAccessories != nil && currentAccessories?.count == 0)
+        if(currentRoom?.accessories != nil && currentRoom?.accessories.count == 0)
         {
-            print("error cell")
             let cell = tableView.dequeueReusableCellWithIdentifier("errorcell")
             return cell!
         }
         else
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("standardcell")
-            cell!.textLabel!.text = currentAccessories![indexPath.row].name
+            cell!.textLabel!.text = currentRoom?.accessories[indexPath.row].name
             return cell!
         }
         
@@ -61,11 +61,11 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if(currentAccessories == nil)
+        if(currentRoom?.accessories == nil)
         {
             return 0;
         }
-        if (currentAccessories != nil && currentAccessories?.count == 0)
+        if (currentRoom?.accessories != nil && currentRoom!.accessories.count == 0)
         {
 
             return 1;
@@ -73,18 +73,20 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
         else
         {
             //return number of Accessories
-            return (currentAccessories?.count)!
+            return (currentRoom?.accessories.count)!
         }
         
     }
     
     
     override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
         super.viewWillAppear(animated)
         
     }
     
     override func viewWillDisappear(animated: Bool) {
+        
         super.viewWillDisappear(animated)
         
     }

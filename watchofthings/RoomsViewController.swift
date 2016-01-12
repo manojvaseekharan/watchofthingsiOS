@@ -46,7 +46,6 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
             roomsAccessoriesVC.homeManager = self.homeManager
             roomsAccessoriesVC.currentHome = self.currentHome
             roomsAccessoriesVC.currentRoom = self.currentRooms![path.row]
-            roomsAccessoriesVC.currentAccessories = self.currentRooms![path.row].accessories
         }
     }
     
@@ -88,13 +87,11 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if(currentHome != nil && currentHome?.rooms.count == 0)
         {
-            print("error")
             let cell = tableView.dequeueReusableCellWithIdentifier("errorcell")
             return cell!
         }
         else
         {
-            print("no error")
             let cell = tableView.dequeueReusableCellWithIdentifier("standardcell")
             cell!.textLabel!.text = currentRooms![indexPath.row].name
             return cell!
@@ -113,7 +110,6 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
         }
         if (currentRooms != nil && currentRooms?.count == 0)
         {
-            print("returned")
             //if HomeManager has returned results from HomeKit DB and there are no Rooms set, return single row for error message.
             return 1;
         }

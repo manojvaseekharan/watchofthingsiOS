@@ -18,6 +18,7 @@
 		709696241C43129D00A78D32 /* RoomsAccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */; };
 		70BDA2E81C41AEF000D6DACA /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */; };
 		70BDA2EA1C41E56A00D6DACA /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */; };
+		70C233091C45499200868378 /* FindAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C233081C45499200868378 /* FindAccessoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsAccessoriesViewController.swift; sourceTree = "<group>"; };
 		70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
 		70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		70C233081C45499200868378 /* FindAccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindAccessoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				708A852B1C41669B005B66B1 /* HomeViewController.swift */,
 				70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */,
 				709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */,
+				70C233081C45499200868378 /* FindAccessoryViewController.swift */,
 			);
 			path = watchofthings;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C233091C45499200868378 /* FindAccessoryViewController.swift in Sources */,
 				708A852C1C41669B005B66B1 /* HomeViewController.swift in Sources */,
 				70BDA2EA1C41E56A00D6DACA /* RoomsViewController.swift in Sources */,
 				7061DC0B1C3ECA0F00674F06 /* ViewController.swift in Sources */,
