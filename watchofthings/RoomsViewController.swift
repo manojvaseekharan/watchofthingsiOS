@@ -28,6 +28,7 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
         addNewRoom.target = self
         addNewRoom.action = action
         homeManager?.delegate = self
+        tableView.allowsMultipleSelectionDuringEditing = false
         
     }
     
@@ -35,6 +36,38 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
         //room was added
         currentRooms = home.rooms
         tableView.reloadData()
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.Delete)
+        {
+            //display prompt asking user if they want to delete a home.
+            let alert = UIAlertController(title: "Delete Room", message: "Are you sure you want to delete \(currentRooms![indexPath.row].name)?\nAll of its accessories will be deleted.", preferredStyle: UIAlertControllerStyle.Alert)
+            //delete from table view, delete
+            
+            let confirm = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Destructive, handler: { (UIAlertAction) -> Void in
+                self.currentHome?.removeRoom(self.currentRooms![indexPath.row], completionHandler:
+                    { (error: NSError?) -> Void in
+                    self.currentRooms = self.currentHome!.rooms
+                    tableView.reloadData()
+                })
+            })
+            
+            let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
+                //do nothing
+            })
+            
+            alert.addAction(cancel)
+            alert.addAction(confirm)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -79,9 +112,7 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
         }))
         self.presentViewController(alert, animated: true, completion: nil)
         
-        
     }
-    
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -96,7 +127,6 @@ class RoomsViewController : UIViewController, HMHomeManagerDelegate, UITableView
             cell!.textLabel!.text = currentRooms![indexPath.row].name
             return cell!
         }
-        
     }
     
     

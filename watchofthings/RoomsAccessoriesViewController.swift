@@ -29,6 +29,7 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
         super.viewDidLoad()
         homeManager?.delegate = self
         self.navigationItem.title = currentRoom?.name
+        tableView.allowsMultipleSelectionDuringEditing = false
         
     }
     
@@ -77,6 +78,38 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
         }
         
     }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.Delete)
+        {
+            //display prompt asking user if they want to delete a home.
+            let alert = UIAlertController(title: "Delete Accessory", message: "Are you sure you want to delete \(currentRoom!.accessories[indexPath.row].name) from \(currentRoom!.name)?\n", preferredStyle: UIAlertControllerStyle.Alert)
+            //delete from table view, delete
+            
+            let confirm = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Destructive, handler: { (UIAlertAction) -> Void in
+                self.currentHome?.removeAccessory(self.currentRoom!.accessories[indexPath.row], completionHandler: { (error: NSError?) -> Void in
+                    tableView.reloadData()
+                })
+            })
+            
+            let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
+                //do nothing
+            })
+            
+            alert.addAction(cancel)
+            alert.addAction(confirm)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            
+        }
+    }
+    
+    
     
     
     override func viewWillAppear(animated: Bool) {

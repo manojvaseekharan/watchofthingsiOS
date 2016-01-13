@@ -29,6 +29,7 @@ class FindAccessoryViewController : UIViewController, HMHomeManagerDelegate, HMA
         homeAccessoryBrowser?.delegate = self
         homeAccessoryBrowser?.startSearchingForNewAccessories()
         backButton.action = "backToRooms"
+        tableView.allowsMultipleSelectionDuringEditing = false
         
         // Do any additional setup after loading the view, typically from a nib.
     }
