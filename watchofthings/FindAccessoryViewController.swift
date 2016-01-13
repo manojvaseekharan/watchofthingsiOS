@@ -43,8 +43,6 @@ class FindAccessoryViewController : UIViewController, HMHomeManagerDelegate, HMA
         
         foundAccessories = browser.discoveredAccessories
         tableView.reloadData()
-        
-        
     }
     
     func accessoryBrowser(browser: HMAccessoryBrowser, didRemoveNewAccessory accessory: HMAccessory) {
@@ -83,65 +81,61 @@ class FindAccessoryViewController : UIViewController, HMHomeManagerDelegate, HMA
         else if (indexPath.row < foundAccessories!.count)
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("standardcell")
-            //allow multiple lines
-            //cell?.textLabel?.numberOfLines = 0
             cell?.textLabel?.text = foundAccessories![indexPath.row].name
             return cell!
         }
             //loading cell always appears at bottom of screen
             let cell = tableView.dequeueReusableCellWithIdentifier("loadingcell")
             return cell!
-        
     }
-    
-    
-    
-    
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        //if the last row (which is the loading icon row) is selected, just return.
         if(indexPath.row == foundAccessories!.count)
         {
             return
         }
         
+        //otherwise, get accessory to add
         let accessoryToAdd = foundAccessories![indexPath.row]
-        //display alert asking user if they are sure about adding the accessory to the room
+        
+        //display Alert asking user if they are sure about adding the accessory to the room.
         let alert = UIAlertController(title: "Add New Accessory", message: "Are you sure you want to add \(foundAccessories![indexPath.row].name) to \(currentRoom!.name)?", preferredStyle: UIAlertControllerStyle.Alert)
         
-        //confirm action
-        
+        //confirm action for the Alert
         alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Destructive, handler: { (UIAlertAction) -> Void in
-            //add to home
+            //Add to Home
             self.currentHome?.addAccessory(accessoryToAdd, completionHandler: { (error : NSError?) -> Void in
                 //nothing
                 if(error != nil)
                 {
-//                    //add 
+//                    //do nothing - the OS will handle this
                 }
                 else
                 {
-                    //ok it's added to home, now add it to
-                    self.currentHome?.assignAccessory(accessoryToAdd, toRoom: self.currentRoom!, completionHandler: { (error:NSError?) -> Void in
+                    //ok it's added to Home, now add it to Room
+                    self.currentHome?.assignAccessory(accessoryToAdd, toRoom: self.currentRoom!, completionHandler: {
+                        (error:NSError?) -> Void in
                         if(error != nil)
                         {
+                            //TODO: Handle error
                             print("error")
                             print(error)
                         }
-                        //nothing
                     })
 
                 }
             })
-            //assign to room
-                        //then once alert disappears, move back to previous screen.
-            //self.backToRooms()
         }))
+        
+        //Add a Cancel action to the Alert.
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
             //do nothing
         }))
         
+        //Show Alert
         self.presentViewController(alert, animated: true, completion: nil)
     }
 }
