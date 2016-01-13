@@ -26,6 +26,7 @@ class HomeViewController : UIViewController, HMHomeManagerDelegate, UITableViewD
         addNewHome.action = action
         homeManager = HMHomeManager()
         homeManager?.delegate = self
+        tableView.allowsMultipleSelectionDuringEditing = false
         
     }
     
@@ -39,6 +40,10 @@ class HomeViewController : UIViewController, HMHomeManagerDelegate, UITableViewD
             roomsVC.currentRooms = homes![path.row].rooms
             
         }
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
     }
     
     
@@ -110,6 +115,34 @@ class HomeViewController : UIViewController, HMHomeManagerDelegate, UITableViewD
             return cell!
         }
         
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.Delete)
+        {
+            //display prompt asking user if they want to delete a home.
+            let alert = UIAlertController(title: "Delete Home", message: "Are you sure you want to delete \(homes![indexPath.row].name)?\nAll of its rooms and accessories will be deleted.", preferredStyle: UIAlertControllerStyle.Alert)
+            //delete from table view, delete
+            
+            let confirm = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Destructive, handler: { (UIAlertAction) -> Void in
+                self.homeManager?.removeHome(self.homes![indexPath.row], completionHandler: {
+                    (error: NSError?) -> Void in
+                    self.homes = self.homeManager?.homes
+                    tableView.reloadData()
+                })
+            })
+            
+            let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
+                //do nothing
+            })
+            
+            alert.addAction(cancel)
+            alert.addAction(confirm)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            
+        }
     }
 
     
