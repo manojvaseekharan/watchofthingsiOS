@@ -14,8 +14,6 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
     
    
     //passed from previous view
-   
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addNewAccessory: UIBarButtonItem!
     var homeManager : HMHomeManager?
@@ -76,7 +74,6 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
             //return number of Accessories
             return (currentRoom?.accessories.count)!
         }
-        
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -104,12 +101,8 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
             alert.addAction(confirm)
             
             self.presentViewController(alert, animated: true, completion: nil)
-            
-            
         }
     }
-    
-    
     
     
     override func viewWillAppear(animated: Bool) {
@@ -119,9 +112,7 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
     }
     
     override func viewWillDisappear(animated: Bool) {
-        
         super.viewWillDisappear(animated)
-        
     }
     
     override func didReceiveMemoryWarning() {
