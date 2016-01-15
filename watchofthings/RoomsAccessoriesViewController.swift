@@ -40,6 +40,16 @@ class RoomsAccessoriesViewController : UIViewController, HMHomeManagerDelegate, 
             findAccessoriesVC.currentHome = self.currentHome
             findAccessoriesVC.currentRoom = self.currentRoom
         }
+        else if (segue.identifier == "controlAccessory")
+        {
+            let accessoryControlVC : AccessoryControlViewController = segue.destinationViewController as! AccessoryControlViewController
+            let path = self.tableView.indexPathForSelectedRow!
+            accessoryControlVC.homeManager = self.homeManager
+            accessoryControlVC.currentHome = self.currentHome
+            accessoryControlVC.currentRoom = self.currentRoom
+            accessoryControlVC.currentAccessory = self.currentRoom?.accessories[path.row]
+
+        }
     }
     
     
