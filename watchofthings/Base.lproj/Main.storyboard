@@ -426,8 +426,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="label" destination="Mxj-DO-j0g" id="cnK-1V-4Rv"/>
-                                            <outlet property="onoffSwitch" destination="hPs-ww-ik0" id="ET3-Yp-pMq"/>
+                                            <outlet property="label" destination="Mxj-DO-j0g" id="Y5M-Bk-4JU"/>
+                                            <outlet property="onOffSwitch" destination="hPs-ww-ik0" id="gwz-6W-UBK"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="numericvalue" rowHeight="88" id="idp-dG-Fs3" customClass="NumericCell" customModule="watchofthings" customModuleProvider="target">
