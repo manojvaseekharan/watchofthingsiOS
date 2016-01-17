@@ -37,7 +37,7 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource {
     
     let temperatureUnitCharacteristics = [HMCharacteristicTypeTemperatureUnits : "Temperature Units"]
     
-    //array of the above dictionaries
+    //hold all of the above in an array of dictionaries
     var characteristics = [[String : String]()]
     
     override func viewDidLoad() {
@@ -49,14 +49,15 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource {
         
         currentServices = currentAccessory!.services
         
-        //remove first service as it is
+        //remove the first service as it is not required.
         currentServices?.removeFirst()
         
-        //append characteristics into currentCharacteristics array (note we may not need this...)
+        //append characteristics into currentCharacteristics array (NOTE: we may not need this...)
         for service in currentServices!
         {
             currentCharacteristics?.appendContentsOf(service.characteristics)
         }
+        
     }
     
     func setupCharacteristics()
@@ -72,11 +73,12 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return currentServices![section].characteristics.count
+        //disregard 'type name' characteristic, so - 1 from the count
+        return currentServices![section].characteristics.count - 1
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        //disregard first service
+        //first service is discarded in the viewDidLoad method
         return currentServices!.count
     }
     
@@ -93,19 +95,19 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource {
 //        else
 //        {
             //let serviceName = currentServices![indexPath.section].name
-            let characteristic = currentServices![indexPath.section].characteristics[indexPath.row].characteristicType
-            let cell = tableView.dequeueReusableCellWithIdentifier("standardcell")
+        
+            let characteristic = currentServices![indexPath.section].characteristics[indexPath.row+1].characteristicType
+            let cell = tableView.dequeueReusableCellWithIdentifier("booleanvalue") as! BooleanCell
             for characteristictype in characteristics
             {
+                
                 if(characteristictype[characteristic] != nil)
                 {
-                    cell?.textLabel!.text = characteristictype[characteristic]
+                    cell.label.text = characteristictype[characteristic]
+                    cell.onoffSwitch.on = true
                 }
             }
-        
-        
-        
-            return cell!
+            return cell
 //        }
     }
     
