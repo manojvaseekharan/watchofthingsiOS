@@ -234,7 +234,8 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource, 
         if(booleanCharacteristics[characteristicType] != nil)
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("booleanvalue") as! BooleanCell
-            
+            //assign characteristic to cell
+            cell.characteristic = characteristic
             //set name of characteristic from dictionary
             cell.label.text = booleanCharacteristics[characteristicType]
             

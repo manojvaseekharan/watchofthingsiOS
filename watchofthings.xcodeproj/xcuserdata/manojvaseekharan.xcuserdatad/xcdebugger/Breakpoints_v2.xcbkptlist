@@ -634,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watchofthings/AccessoryControlViewController.swift"
-            timestampString = "474759261.030912"
+            timestampString = "474762618.435901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "365"
-            endingLineNumber = "365"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "accessory(_:service:didUpdateValueForCharacteristic:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -650,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watchofthings/AccessoryControlViewController.swift"
-            timestampString = "474759178.165394"
+            timestampString = "474762618.435901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362"
+            startingLineNumber = "363"
+            endingLineNumber = "363"
             landmarkName = "accessory(_:service:didUpdateValueForCharacteristic:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -682,7 +682,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watchofthings/AccessoryControlViewController.swift"
-            timestampString = "474759228.388502"
+            timestampString = "474762618.435901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
+            landmarkName = "accessory(_:service:didUpdateValueForCharacteristic:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watchofthings/AccessoryControlViewController.swift"
+            timestampString = "474762618.435901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "366"
@@ -698,12 +714,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watchofthings/AccessoryControlViewController.swift"
-            timestampString = "474759229.29179"
+            timestampString = "474762618.435901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "365"
-            endingLineNumber = "365"
-            landmarkName = "accessory(_:service:didUpdateValueForCharacteristic:)"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "getCell(_:characteristic:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watchofthings/BooleanCell.swift"
+            timestampString = "474763100.879988"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "valueChanged(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
