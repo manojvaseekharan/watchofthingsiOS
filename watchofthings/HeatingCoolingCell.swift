@@ -8,9 +8,11 @@
 
 import Foundation
 import UIKit
+import HomeKit
 
 class HeatingCoolingCell : UITableViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    var characteristic : HMCharacteristic?
     
 }

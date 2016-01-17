@@ -8,10 +8,12 @@
 
 import Foundation
 import UIKit
+import HomeKit
 
 class LockMechanismStateCell : UITableViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    var characteristic : HMCharacteristic?
     
     
     

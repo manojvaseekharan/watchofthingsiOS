@@ -442,6 +442,9 @@
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-9J-Luy">
                                                     <rect key="frame" x="214" y="29" width="380" height="31"/>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="idp-dG-Fs3" eventType="valueChanged" id="bFX-iO-77F"/>
+                                                    </connections>
                                                 </slider>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numeric Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gY-D1-3DR">
                                                     <rect key="frame" x="8" y="33" width="200" height="21"/>

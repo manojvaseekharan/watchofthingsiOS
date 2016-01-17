@@ -249,7 +249,7 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource, 
         else if (numericalCharacteristics[characteristicType] != nil)
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("numericvalue") as! NumericCell
-            
+            cell.characteristic = characteristic
             cell.label.text = numericalCharacteristics[characteristicType]
             
             readCurrentValue(cell as UITableViewCell, characteristic: characteristic, typeOfValue: 1)
@@ -261,7 +261,7 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource, 
         else if (fanCharacteristics[characteristicType] != nil)
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("fandirection") as! FanDirectionCell
-            
+            cell.characteristic = characteristic
             cell.label.text = fanCharacteristics[characteristicType]
             
             readCurrentValue(cell as UITableViewCell, characteristic: characteristic, typeOfValue: 2)
@@ -286,6 +286,7 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource, 
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("heatingcooling") as! HeatingCoolingCell
             cell.label.text = heatingCoolingCharacteristics[characteristicType]
+            cell.characteristic = characteristic
             readCurrentValue(cell as UITableViewCell, characteristic: characteristic, typeOfValue: 4)
              disableCellIfNecessary(cell, characteristic: characteristic, typeOfValue: 4)
             return cell
@@ -294,6 +295,7 @@ class AccessoryControlViewController : UIViewController, UITableViewDataSource, 
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("lockmechanism") as! LockMechanismStateCell
             cell.label.text = lockMechanismCharacteristics[characteristicType]
+            cell.characteristic = characteristic
             readCurrentValue(cell as UITableViewCell, characteristic: characteristic, typeOfValue: 5)
             disableCellIfNecessary(cell, characteristic: characteristic, typeOfValue: 5)
             return cell
