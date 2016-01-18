@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - watchapp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>watchapp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>watchofthings.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7061DC041C3ECA0F00674F06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>707FEABE1C4D900A00C405F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
