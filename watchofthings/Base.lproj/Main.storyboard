@@ -485,6 +485,9 @@
                                                         <segment title="Cool"/>
                                                         <segment title="Auto"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="2kW-Df-b1t" eventType="valueChanged" id="5td-Bx-066"/>
+                                                    </connections>
                                                 </segmentedControl>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heating/Cooling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1X-OD-Foe">
                                                     <rect key="frame" x="8" y="33" width="200" height="21"/>
@@ -526,6 +529,9 @@
                                                         <segment title="Closing"/>
                                                         <segment title="Stopped"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="gSW-nI-X9Q" eventType="valueChanged" id="C2o-Zu-mUg"/>
+                                                    </connections>
                                                 </segmentedControl>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Door State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-d7-5Uy">
                                                     <rect key="frame" x="8" y="33" width="200" height="21"/>
@@ -573,6 +579,9 @@
                                                         <segment title="Clockwise"/>
                                                         <segment title="Counterclockwise"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="eos-QX-xWP" eventType="valueChanged" id="tHh-cG-urV"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -613,6 +622,9 @@
                                                         <segment title="Jammed"/>
                                                         <segment title="Unknown"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="Iuy-VA-UEs" eventType="valueChanged" id="NUf-bN-omA"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>

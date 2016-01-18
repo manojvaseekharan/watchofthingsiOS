@@ -16,8 +16,6 @@ class NumericCell : UITableViewCell {
     
     var characteristic : HMCharacteristic?
     
-    
-   
     @IBAction func valueChanged(sender: UISlider) {
         let newValue = round(sender.value)
         characteristic!.writeValue(newValue, completionHandler: { (error: NSError?) -> Void in

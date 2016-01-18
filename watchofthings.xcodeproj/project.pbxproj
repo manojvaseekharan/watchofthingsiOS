@@ -98,13 +98,13 @@
 				709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */,
 				70C233081C45499200868378 /* FindAccessoryViewController.swift */,
 				70CC8E8C1C481ECD0076D659 /* AccessoryControlViewController.swift */,
-				70CF689F1C4AE5A8007A1C71 /* NumericCell.swift */,
 				70CF68A51C4B080B007A1C71 /* FanDirectionCell.swift */,
-				70CF68A11C4B01A4007A1C71 /* HeatingCoolingCell.swift */,
-				70CF68A31C4B0476007A1C71 /* DoorStateCell.swift */,
-				70CF68A71C4B0C1E007A1C71 /* LockMechanismStateCell.swift */,
 				70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */,
 				70BB07CE1C4BBAE0006B97D3 /* BooleanCell.swift */,
+				70CF689F1C4AE5A8007A1C71 /* NumericCell.swift */,
+				70CF68A11C4B01A4007A1C71 /* HeatingCoolingCell.swift */,
+				70CF68A71C4B0C1E007A1C71 /* LockMechanismStateCell.swift */,
+				70CF68A31C4B0476007A1C71 /* DoorStateCell.swift */,
 			);
 			path = watchofthings;
 			sourceTree = "<group>";
