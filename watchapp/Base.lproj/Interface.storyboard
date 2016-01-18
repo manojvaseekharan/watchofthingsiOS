@@ -10,21 +10,24 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchapp" customModuleProvider="target">
                     <items>
-                        <button width="105" height="105.5" alignment="center" title="RECORD" id="XuA-Au-8v4">
+                        <label width="136" alignment="center" text="Watch of Things" textAlignment="center" id="PEq-1d-y1y">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="105" height="74.5" alignment="center" verticalAlignment="center" title="RECORD" id="XuA-Au-8v4">
                             <color key="backgroundColor" red="1" green="0.2310833762" blue="0.25579556260000003" alpha="1" colorSpace="calibratedRGB"/>
-                            <variation key="device=watch42mm" height="129.5"/>
+                            <variation key="device=watch42mm" height="98.5"/>
                             <connections>
                                 <segue destination="wSH-kV-QTa" kind="modal" id="sHk-CR-lfw"/>
                             </connections>
                         </button>
-                        <label width="136" height="41.5" alignment="left" text="Click Record To Start" textAlignment="center" numberOfLines="0" id="7Fb-Is-bZp">
-                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
-                            <variation key="device=watch42mm" width="156"/>
+                        <label width="136" height="41.5" alignment="center" verticalAlignment="bottom" text="Click Record To Start" textAlignment="center" numberOfLines="0" id="7Fb-Is-bZp">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                            <variation key="device=watch42mm" height="29.5" width="156"/>
                         </label>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="218.82051282051285" y="344.35897435897436"/>
+            <point key="canvasLocation" x="216.20512820512823" y="318.64102564102564"/>
         </scene>
         <!--Record Task Interface Controller-->
         <scene sceneID="bOk-IJ-CVn">
@@ -49,7 +52,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="443" y="344"/>
+            <point key="canvasLocation" x="447" y="325"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
