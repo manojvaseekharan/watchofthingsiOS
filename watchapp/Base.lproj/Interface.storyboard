@@ -38,17 +38,6 @@
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                             <variation key="device=watch38mm" width="136"/>
                         </label>
-                        <table alignment="left" id="LlD-sv-gEQ">
-                            <items>
-                                <tableRow id="1E9-bs-Rj4">
-                                    <group key="rootItem" width="1" alignment="left" id="lwl-af-5M7">
-                                        <items>
-                                            <label width="136" height="59.5" alignment="left" text="This is a test" numberOfLines="3" id="E3i-zX-ICh"/>
-                                        </items>
-                                    </group>
-                                </tableRow>
-                            </items>
-                        </table>
                     </items>
                 </controller>
             </objects>

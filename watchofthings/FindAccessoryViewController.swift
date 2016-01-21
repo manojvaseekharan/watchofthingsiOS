@@ -113,6 +113,7 @@ class FindAccessoryViewController : UIViewController, HMHomeManagerDelegate, HMA
                 if(error != nil)
                 {
 //                    //do nothing - the OS will handle this
+                    print("error!")
                 }
                 else
                 {

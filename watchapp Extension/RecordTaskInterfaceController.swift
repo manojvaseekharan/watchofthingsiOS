@@ -24,6 +24,8 @@ class RecordTaskInterfaceController: WKInterfaceController, HMHomeManagerDelegat
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        //initialise home manager and set delegate
         homeManager = HMHomeManager()
         homeManager!.delegate = self
     }
