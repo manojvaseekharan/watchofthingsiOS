@@ -1,8 +1,8 @@
 //
 //  InterfaceController.swift
-//  watchapp Extension
+//  watch Extension
 //
-//  Created by Manoj Vaseekharan on 18/01/2016.
+//  Created by Manoj Vaseekharan on 23/01/2016.
 //  Copyright © 2016 Manoj Vaseekharan. All rights reserved.
 //
 

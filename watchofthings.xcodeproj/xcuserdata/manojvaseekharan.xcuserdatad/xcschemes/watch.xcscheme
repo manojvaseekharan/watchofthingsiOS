@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "707FEABE1C4D900A00C405F6"
-               BuildableName = "watchapp.app"
-               BlueprintName = "watchapp"
+               BlueprintIdentifier = "7054949B1C53B29800CFDD39"
+               BuildableName = "watch.app"
+               BlueprintName = "watch"
                ReferencedContainer = "container:watchofthings.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "707FEACA1C4D900A00C405F6"
-               BuildableName = "watchapp Extension.appex"
-               BlueprintName = "watchapp Extension"
+               BlueprintIdentifier = "705494A71C53B29800CFDD39"
+               BuildableName = "watch Extension.appex"
+               BlueprintName = "watch Extension"
                ReferencedContainer = "container:watchofthings.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "707FEABE1C4D900A00C405F6"
-            BuildableName = "watchapp.app"
-            BlueprintName = "watchapp"
+            BlueprintIdentifier = "7054949B1C53B29800CFDD39"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
             ReferencedContainer = "container:watchofthings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,18 +85,18 @@
          RemotePath = "/watchofthings">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "707FEABE1C4D900A00C405F6"
-            BuildableName = "watchapp.app"
-            BlueprintName = "watchapp"
+            BlueprintIdentifier = "7054949B1C53B29800CFDD39"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
             ReferencedContainer = "container:watchofthings.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "707FEABE1C4D900A00C405F6"
-            BuildableName = "watchapp.app"
-            BlueprintName = "watchapp"
+            BlueprintIdentifier = "7054949B1C53B29800CFDD39"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
             ReferencedContainer = "container:watchofthings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -115,18 +115,18 @@
          RemotePath = "/watchofthings">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "707FEABE1C4D900A00C405F6"
-            BuildableName = "watchapp.app"
-            BlueprintName = "watchapp"
+            BlueprintIdentifier = "7054949B1C53B29800CFDD39"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
             ReferencedContainer = "container:watchofthings.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "707FEABE1C4D900A00C405F6"
-            BuildableName = "watchapp.app"
-            BlueprintName = "watchapp"
+            BlueprintIdentifier = "7054949B1C53B29800CFDD39"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
             ReferencedContainer = "container:watchofthings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
