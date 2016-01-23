@@ -26,6 +26,8 @@
 		7061DC131C3ECA0F00674F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7061DC111C3ECA0F00674F06 /* LaunchScreen.storyboard */; };
 		708A852C1C41669B005B66B1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A852B1C41669B005B66B1 /* HomeViewController.swift */; };
 		709696241C43129D00A78D32 /* RoomsAccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */; };
+		70B5199C1C5410D200A58481 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B5199B1C5410D200A58481 /* Listener.swift */; };
+		70B5199E1C54114200A58481 /* BasicListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B5199D1C54114200A58481 /* BasicListener.swift */; };
 		70BB07CF1C4BBAE0006B97D3 /* BooleanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB07CE1C4BBAE0006B97D3 /* BooleanCell.swift */; };
 		70BDA2E81C41AEF000D6DACA /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */; };
 		70BDA2EA1C41E56A00D6DACA /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */; };
@@ -125,6 +127,8 @@
 		7061DC1C1C3ECAFB00674F06 /* watchofthings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = watchofthings.entitlements; sourceTree = "<group>"; };
 		708A852B1C41669B005B66B1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsAccessoriesViewController.swift; sourceTree = "<group>"; };
+		70B5199B1C5410D200A58481 /* Listener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
+		70B5199D1C54114200A58481 /* BasicListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListener.swift; sourceTree = "<group>"; };
 		70BB07CE1C4BBAE0006B97D3 /* BooleanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooleanCell.swift; sourceTree = "<group>"; };
 		70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
 		70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				705494B11C53B29800CFDD39 /* Assets.xcassets */,
 				705494B31C53B29800CFDD39 /* Info.plist */,
 				705494C81C53EF4D00CFDD39 /* RowType.swift */,
+				70B5199B1C5410D200A58481 /* Listener.swift */,
+				70B5199D1C54114200A58481 /* BasicListener.swift */,
 			);
 			path = "watch Extension";
 			sourceTree = "<group>";
@@ -441,6 +447,8 @@
 				705494AE1C53B29800CFDD39 /* InterfaceController.swift in Sources */,
 				705494C91C53EF4D00CFDD39 /* RowType.swift in Sources */,
 				705494C21C53CE1300CFDD39 /* RecordInterfaceController.swift in Sources */,
+				70B5199E1C54114200A58481 /* BasicListener.swift in Sources */,
+				70B5199C1C5410D200A58481 /* Listener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +790,7 @@
 				705494B91C53B29800CFDD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705494BB1C53B29800CFDD39 /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
@@ -790,6 +799,7 @@
 				705494BD1C53B29800CFDD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7061DC001C3ECA0F00674F06 /* Build configuration list for PBXProject "watchofthings" */ = {
 			isa = XCConfigurationList;

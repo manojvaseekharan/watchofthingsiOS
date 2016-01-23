@@ -890,11 +890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475264068.765876"
+            timestampString = "475274361.854105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "willActivate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -906,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475264068.765876"
+            timestampString = "475274361.854105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "didAppear()"
             landmarkType = "5">
          </BreakpointContent>
@@ -922,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475264068.765876"
+            timestampString = "475274361.854105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "RecordInterfaceController"
             landmarkType = "3">
          </BreakpointContent>
@@ -938,11 +938,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475264068.765876"
+            timestampString = "475274361.854105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "RecordInterfaceController"
             landmarkType = "3">
          </BreakpointContent>
@@ -954,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475264068.765876"
+            timestampString = "475274361.854105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "homeManagerDidUpdateHomes(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -970,11 +970,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475264068.765876"
+            timestampString = "475274361.854105"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "homeManagerDidUpdateHomes(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/RecordInterfaceController.swift"
+            timestampString = "475274361.854105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "homeManagerDidUpdateHomes(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -985,13 +1001,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "watch Extension/RecordInterfaceController.swift"
-            timestampString = "475268279.42529"
+            filePath = "watch Extension/BasicListener.swift"
+            timestampString = "475274522.899545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "homeManagerDidUpdateHomes(_:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "accessory(_:service:didUpdateValueForCharacteristic:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "watch_Extension.BasicListener.accessory (watch_Extension.BasicListener)(__ObjC.HMAccessory, service : __ObjC.HMService, didUpdateValueForCharacteristic : __ObjC.HMCharacteristic) -&gt; ()"
+                  moduleName = "watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manojvaseekharan/Google%20Drive/watchofthings/watch%20Extension/BasicListener.swift"
+                  timestampString = "475272754.238601"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for watch_Extension.Listener.accessory &lt;A where A: watch_Extension.Listener&gt; (A)(__ObjC.HMAccessory, service : __ObjC.HMService, didUpdateValueForCharacteristic : __ObjC.HMCharacteristic) -&gt; () in conformance watch_Extension.BasicListener : watch_Extension.Listener in watch_Extension"
+                  moduleName = "watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manojvaseekharan/Google%20Drive/watchofthings/watch%20Extension/BasicListener.swift"
+                  timestampString = "475272754.238864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/BasicListener.swift"
+            timestampString = "475274522.899545"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "configure(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "watch_Extension.BasicListener.configure (watch_Extension.BasicListener)(__ObjC.HMHomeManager) -&gt; ()"
+                  moduleName = "watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manojvaseekharan/Google%20Drive/watchofthings/watch%20Extension/BasicListener.swift"
+                  timestampString = "475272451.545892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2312">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "watch_Extension.BasicListener.(configure (watch_Extension.BasicListener) -&gt; (__ObjC.HMHomeManager) -&gt; ()).(closure #1)"
+                  moduleName = "watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manojvaseekharan/Google%20Drive/watchofthings/watch%20Extension/BasicListener.swift"
+                  timestampString = "475272451.546801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/BasicListener.swift"
+            timestampString = "475274522.899545"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "configure(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

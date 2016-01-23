@@ -40,8 +40,8 @@
                                 <tableRow identifier="errorRow" selectable="NO" id="hfg-kG-gnB" customClass="RowType" customModule="watch_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="OGP-Qy-f3z">
                                         <items>
-                                            <label width="1" alignment="left" text="No Homes Configured! Add a home through the watchofthings iOS app." numberOfLines="0" id="CyS-7A-Jna">
-                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            <label width="1" alignment="left" text="No Homes Configured! Add a Home through the watchofthings iOS app." textAlignment="center" numberOfLines="0" id="CyS-7A-Jna">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
                                         </items>
                                     </group>
@@ -56,9 +56,13 @@
                         </table>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="DONE" id="bhQ-q6-3tt">
                             <color key="backgroundColor" red="1" green="0.060309413020000001" blue="0.2255303421" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="ZRD-1E-Qq4" id="iVG-5V-EaR"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
+                        <outlet property="doneButton" destination="bhQ-q6-3tt" id="twQ-se-hCf"/>
                         <outlet property="table" destination="qBz-2k-vSs" id="WFq-uu-GYE"/>
                     </connections>
                 </controller>

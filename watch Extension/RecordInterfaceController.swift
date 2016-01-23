@@ -14,11 +14,14 @@ import HomeKit
 class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
     
     var homeManager : HMHomeManager?
+    
+    @IBOutlet var doneButton: WKInterfaceButton!
   
     @IBOutlet var errorCellGroup: WKInterfaceGroup!
  
     @IBOutlet var table: WKInterfaceTable!
     
+    var listener : Listener?
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,12 +31,21 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        self.setTitle("Record Task")
+        homeManager = HMHomeManager()
+        homeManager!.delegate = self
         super.willActivate()
     }
     
+    
+    
+    @IBAction func buttonPressed() {
+        listener?.deconfigure(self.homeManager!)
+        self.dismissController()
+    }
+    
     override func didAppear() {
-        homeManager = HMHomeManager()
-        homeManager!.delegate = self
+        
     }
     
     override func didDeactivate() {
@@ -49,7 +61,7 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
         {
             case 0:
                 //successful
-                print("successful")
+                configureListener()
                 return
             case 1:
                 errorString = "No Homes Configured! Add a home through the watchofthings iOS app."
@@ -104,6 +116,14 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
             }
         }
         return 3
+    }
+    
+    //Prepares to listen for state changes in accessories
+    func configureListener()
+    {
+        //need to swap out listener implementation as we iterate through designs
+        self.listener = BasicListener()
+        listener!.configure(self.homeManager!)
     }
 
 }
