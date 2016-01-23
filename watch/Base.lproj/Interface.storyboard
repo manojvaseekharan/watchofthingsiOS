@@ -18,11 +18,52 @@
                         </label>
                         <button width="1" alignment="center" verticalAlignment="center" title="RECORD" id="RLQ-F3-1Nw">
                             <color key="backgroundColor" red="1" green="0.060309413016038205" blue="0.22553034213315992" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ZRD-1E-Qq4" kind="modal" id="KKP-zS-BOx"/>
+                            </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="416" y="363"/>
+        </scene>
+        <!--Record Interface Controller-->
+        <scene sceneID="ISu-j0-Pzr">
+            <objects>
+                <controller id="ZRD-1E-Qq4" customClass="RecordInterfaceController" customModule="watch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Your actions will be shown below..." textAlignment="left" numberOfLines="0" id="qQ4-cw-OdG">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <table alignment="center" id="qBz-2k-vSs">
+                            <items>
+                                <tableRow identifier="errorRow" selectable="NO" id="hfg-kG-gnB" customClass="RowType" customModule="watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="OGP-Qy-f3z">
+                                        <items>
+                                            <label width="1" alignment="left" text="No Homes Configured! Add a home through the watchofthings iOS app." numberOfLines="0" id="CyS-7A-Jna">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="CyS-7A-Jna" id="q6R-JV-oWp"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow id="N77-pg-cJw">
+                                    <group key="rootItem" width="1" alignment="left" id="LkW-ld-uXt"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="DONE" id="bhQ-q6-3tt">
+                            <color key="backgroundColor" red="1" green="0.060309413020000001" blue="0.2255303421" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="qBz-2k-vSs" id="WFq-uu-GYE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="652" y="361"/>
         </scene>
     </scenes>
 </document>
