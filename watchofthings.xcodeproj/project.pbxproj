@@ -24,6 +24,10 @@
 		7061DC0E1C3ECA0F00674F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7061DC0C1C3ECA0F00674F06 /* Main.storyboard */; };
 		7061DC101C3ECA0F00674F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7061DC0F1C3ECA0F00674F06 /* Assets.xcassets */; };
 		7061DC131C3ECA0F00674F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7061DC111C3ECA0F00674F06 /* LaunchScreen.storyboard */; };
+		70844E7E1C54396C0060F395 /* RowContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70844E7D1C54396C0060F395 /* RowContents.swift */; };
+		70844E801C54406B0060F395 /* RowEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70844E7F1C54406B0060F395 /* RowEntry.swift */; };
+		70844E821C54F42B0060F395 /* InstructionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70844E811C54F42B0060F395 /* InstructionStore.swift */; };
+		70844E841C54F5550060F395 /* BasicInstructionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70844E831C54F5550060F395 /* BasicInstructionStore.swift */; };
 		708A852C1C41669B005B66B1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A852B1C41669B005B66B1 /* HomeViewController.swift */; };
 		709696241C43129D00A78D32 /* RoomsAccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */; };
 		70B5199C1C5410D200A58481 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B5199B1C5410D200A58481 /* Listener.swift */; };
@@ -31,6 +35,7 @@
 		70BB07CF1C4BBAE0006B97D3 /* BooleanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB07CE1C4BBAE0006B97D3 /* BooleanCell.swift */; };
 		70BDA2E81C41AEF000D6DACA /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */; };
 		70BDA2EA1C41E56A00D6DACA /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */; };
+		70C18C471C554FEB00F74D12 /* TestInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C18C461C554FEB00F74D12 /* TestInterfaceController.swift */; };
 		70C233091C45499200868378 /* FindAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C233081C45499200868378 /* FindAccessoryViewController.swift */; };
 		70CC8E8D1C481ECD0076D659 /* AccessoryControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CC8E8C1C481ECD0076D659 /* AccessoryControlViewController.swift */; };
 		70CF68A01C4AE5A8007A1C71 /* NumericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF689F1C4AE5A8007A1C71 /* NumericCell.swift */; };
@@ -125,6 +130,10 @@
 		7061DC121C3ECA0F00674F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7061DC141C3ECA0F00674F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7061DC1C1C3ECAFB00674F06 /* watchofthings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = watchofthings.entitlements; sourceTree = "<group>"; };
+		70844E7D1C54396C0060F395 /* RowContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowContents.swift; sourceTree = "<group>"; };
+		70844E7F1C54406B0060F395 /* RowEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowEntry.swift; sourceTree = "<group>"; };
+		70844E811C54F42B0060F395 /* InstructionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionStore.swift; sourceTree = "<group>"; };
+		70844E831C54F5550060F395 /* BasicInstructionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicInstructionStore.swift; sourceTree = "<group>"; };
 		708A852B1C41669B005B66B1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		709696231C43129D00A78D32 /* RoomsAccessoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsAccessoriesViewController.swift; sourceTree = "<group>"; };
 		70B5199B1C5410D200A58481 /* Listener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
@@ -132,6 +141,7 @@
 		70BB07CE1C4BBAE0006B97D3 /* BooleanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooleanCell.swift; sourceTree = "<group>"; };
 		70BDA2E71C41AEF000D6DACA /* AddHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
 		70BDA2E91C41E56A00D6DACA /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		70C18C461C554FEB00F74D12 /* TestInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInterfaceController.swift; sourceTree = "<group>"; };
 		70C233081C45499200868378 /* FindAccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindAccessoryViewController.swift; sourceTree = "<group>"; };
 		70CC8E8C1C481ECD0076D659 /* AccessoryControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryControlViewController.swift; sourceTree = "<group>"; };
 		70CF689F1C4AE5A8007A1C71 /* NumericCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericCell.swift; sourceTree = "<group>"; };
@@ -184,12 +194,17 @@
 				705494C51C53D65B00CFDD39 /* watch Extension.entitlements */,
 				705494AD1C53B29800CFDD39 /* InterfaceController.swift */,
 				705494C11C53CE1300CFDD39 /* RecordInterfaceController.swift */,
+				70C18C461C554FEB00F74D12 /* TestInterfaceController.swift */,
 				705494AF1C53B29800CFDD39 /* ExtensionDelegate.swift */,
 				705494B11C53B29800CFDD39 /* Assets.xcassets */,
 				705494B31C53B29800CFDD39 /* Info.plist */,
 				705494C81C53EF4D00CFDD39 /* RowType.swift */,
 				70B5199B1C5410D200A58481 /* Listener.swift */,
 				70B5199D1C54114200A58481 /* BasicListener.swift */,
+				70844E831C54F5550060F395 /* BasicInstructionStore.swift */,
+				70844E7D1C54396C0060F395 /* RowContents.swift */,
+				70844E7F1C54406B0060F395 /* RowEntry.swift */,
+				70844E811C54F42B0060F395 /* InstructionStore.swift */,
 			);
 			path = "watch Extension";
 			sourceTree = "<group>";
@@ -443,10 +458,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C18C471C554FEB00F74D12 /* TestInterfaceController.swift in Sources */,
 				705494B01C53B29800CFDD39 /* ExtensionDelegate.swift in Sources */,
 				705494AE1C53B29800CFDD39 /* InterfaceController.swift in Sources */,
 				705494C91C53EF4D00CFDD39 /* RowType.swift in Sources */,
+				70844E801C54406B0060F395 /* RowEntry.swift in Sources */,
 				705494C21C53CE1300CFDD39 /* RecordInterfaceController.swift in Sources */,
+				70844E841C54F5550060F395 /* BasicInstructionStore.swift in Sources */,
+				70844E821C54F42B0060F395 /* InstructionStore.swift in Sources */,
+				70844E7E1C54396C0060F395 /* RowContents.swift in Sources */,
 				70B5199E1C54114200A58481 /* BasicListener.swift in Sources */,
 				70B5199C1C5410D200A58481 /* Listener.swift in Sources */,
 			);

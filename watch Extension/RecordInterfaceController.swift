@@ -37,11 +37,24 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
         super.willActivate()
     }
     
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+        if(segueIdentifier == "test")
+        {
+            
+            return self.listener?.instructionStore as! AnyObject?
+        }
+        else
+        {
+            return nil
+        }
+    }
+    
     
     
     @IBAction func buttonPressed() {
-        listener?.deconfigure(self.homeManager!)
-        self.dismissController()
+        //listener?.deconfigure(self.homeManager!)
+        print("pressedd")
+        //self.dismissController()
     }
     
     override func didAppear() {
@@ -51,6 +64,8 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        listener?.deconfigure(self.homeManager!)
+
     }
     
     //when first assigning delegate, or when home is added, this method is called.
@@ -76,6 +91,7 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
         table.setNumberOfRows(1, withRowType: "errorRow")
         let myRowController = table.rowControllerAtIndex(0) as! RowType
         myRowController.label.setText(errorString)
+        
         
         //check if home has rooms/accessories
     }
@@ -122,7 +138,8 @@ class RecordInterfaceController : WKInterfaceController, HMHomeManagerDelegate{
     func configureListener()
     {
         //need to swap out listener implementation as we iterate through designs
-        self.listener = BasicListener()
+        let instructionStore : InstructionStore = BasicInstructionStore()
+        self.listener = BasicListener(table: self.table, instructionStore: instructionStore)
         listener!.configure(self.homeManager!)
     }
 

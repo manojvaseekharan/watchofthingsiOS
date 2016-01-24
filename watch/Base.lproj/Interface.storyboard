@@ -49,8 +49,23 @@
                                         <outlet property="label" destination="CyS-7A-Jna" id="q6R-JV-oWp"/>
                                     </connections>
                                 </tableRow>
-                                <tableRow id="N77-pg-cJw">
-                                    <group key="rootItem" width="1" alignment="left" id="LkW-ld-uXt"/>
+                                <tableRow identifier="Row" id="N77-pg-cJw" customClass="RowEntry" customModule="watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="LkW-ld-uXt">
+                                        <items>
+                                            <group width="1" alignment="left" layout="vertical" id="BL0-iS-pWE">
+                                                <items>
+                                                    <label alignment="left" text="Smart Lamp" numberOfLines="0" id="4jB-tx-Ijc">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                    <label alignment="left" text="Label" numberOfLines="0" id="HeJ-NN-hyZ"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="accessoryName" destination="4jB-tx-Ijc" id="qyh-gV-R62"/>
+                                        <outlet property="stateChange" destination="HeJ-NN-hyZ" id="rVQ-RH-4HR"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
@@ -58,6 +73,7 @@
                             <color key="backgroundColor" red="1" green="0.060309413020000001" blue="0.2255303421" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="buttonPressed" destination="ZRD-1E-Qq4" id="iVG-5V-EaR"/>
+                                <segue destination="gmN-hV-FJ7" kind="modal" identifier="test" id="dCb-Ra-KCv"/>
                             </connections>
                         </button>
                     </items>
@@ -68,6 +84,26 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="652" y="361"/>
+        </scene>
+        <!--Test Interface Controller-->
+        <scene sceneID="Vw5-ZV-ow4">
+            <objects>
+                <controller id="gmN-hV-FJ7" customClass="TestInterfaceController" customModule="watch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Would you like to test your task?" textAlignment="center" numberOfLines="0" id="VDd-hY-lxM"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Test" id="4Yc-mZ-Hpi">
+                            <color key="backgroundColor" red="0.28761266654067114" green="0.61250409031413611" blue="0.13965464037169067" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="testTask" destination="gmN-hV-FJ7" id="31B-tZ-2fw"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Return to Menu" id="YZL-h3-EuT">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="895" y="360"/>
         </scene>
     </scenes>
 </document>
